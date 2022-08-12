@@ -13,15 +13,13 @@ const db = knex({
     client: 'pg',
     connection: {
         connectionString: process.env.DATABASE_URL,
-      ssl: true
-  }
-});
-
-db.select('*').from('users');
-
+        ssl: {
+            rejectUnauthorized: false
+    }
+  }});
 
   const app = express();
-
+  
   app.use(cors())
   app.use(express.json());
   
