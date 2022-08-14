@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -19,7 +19,6 @@
     "pg": "^8.7.3"
   },
   "devDependencies": {
-    "@types/bcrypt-nodejs": "^0.0.31",
-    "nodemon": "^2.0.19"
+    "@types/bcrypt-nodejs": "^0.0.31"
   }
 }
